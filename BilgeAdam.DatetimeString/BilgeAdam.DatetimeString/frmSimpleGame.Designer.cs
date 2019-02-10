@@ -38,7 +38,7 @@
             // 
             // btnRight
             // 
-            this.btnRight.Location = new System.Drawing.Point(744, 109);
+            this.btnRight.Location = new System.Drawing.Point(744, 21);
             this.btnRight.Name = "btnRight";
             this.btnRight.Size = new System.Drawing.Size(44, 42);
             this.btnRight.TabIndex = 0;
@@ -46,7 +46,7 @@
             // 
             // btnLeft
             // 
-            this.btnLeft.Location = new System.Drawing.Point(12, 109);
+            this.btnLeft.Location = new System.Drawing.Point(12, 21);
             this.btnLeft.Name = "btnLeft";
             this.btnLeft.Size = new System.Drawing.Size(44, 42);
             this.btnLeft.TabIndex = 1;
@@ -68,7 +68,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 193);
+            this.ClientSize = new System.Drawing.Size(800, 87);
             this.Controls.Add(this.btnLeft);
             this.Controls.Add(this.btnRight);
             this.Name = "frmSimpleGame";

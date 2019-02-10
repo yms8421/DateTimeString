@@ -1,0 +1,7 @@
+Ödev:
+	Girilen bir haber başlığını haber numarası ve kategorisi ile beraber
+	url formatın (can-perk-derse-basladi-3434534-gundem) çıkaran ekranı yazınız
+	
+Mesela: Son dakika: BDDK'dan ödenemeyen ihtiyaç kredilerine düzenleme
+		3475234578
+		Ekonomi

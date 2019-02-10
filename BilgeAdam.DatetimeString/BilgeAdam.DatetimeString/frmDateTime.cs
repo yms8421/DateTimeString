@@ -25,6 +25,7 @@ namespace BilgeAdam.DatetimeString
             lblYesterday.Text += DateTime.Now.AddDays(-1).ToShortDateString();
             lblNextMonth.Text += DateTime.Now.AddMonths(1).ToShortDateString();
             lblCustomDate.Text += new DateTime(1988, 2, 8).ToString();
+            
             lblDaysCountOfCurrentMonth.Text += DateTime.DaysInMonth(DateTime.Now.Year, DateTime.Now.Month);
             tmrTick.Start();           
         }
@@ -34,13 +35,15 @@ namespace BilgeAdam.DatetimeString
             var birthDateOfDeniz = new DateTime(1996, 6, 21, 7, 20, 0);
             var currentDate = DateTime.Now;
             var a = currentDate.ToUniversalTime();
-            var lifeTime = currentDate - birthDateOfDeniz;
+            TimeSpan lifeTime = currentDate - birthDateOfDeniz;
             var year = lifeTime.Days / 365;
             var days = lifeTime.Days - (year * 365);
             var month = days / 30;
             days = days - month * 30;
-            var time = string.Format("{0:D2}:{1:D2}:{2:D2}", lifeTime.Hours, lifeTime.Minutes, lifeTime.Seconds);
+            var time = string.Format("{0:D2}:{1:D2}:{2:D2}", lifeTime.Hours, lifeTime.Minutes, lifeTime.Seconds);//09:05:03
+            var time2 = string.Format("{0}:{1}:{2}", lifeTime.Hours, lifeTime.Minutes, lifeTime.Seconds);//9:5:3
             lblDiff.Text = $"Deniz'in yaşı : {year} Yıl, {month} Ay, {days} Gün, {time}";
+            lblDiff.Text = $"Deniz'in yaşı : "+ year + " Yıl, " + month + " Ay, " + days + " Gün, " + time;
         }
     }
 }
